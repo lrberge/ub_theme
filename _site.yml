@@ -1,0 +1,15 @@
+name: "Xaringan unofficial University of Bordeaux theme"
+navbar:
+  title: "X-UB theme"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Tutorial"
+      href: "UB_intro/UB_intro.html"
+    - text: Code
+      href: "https://github.com/lrberge/ub_theme"
+output:
+  html_document:
+    theme: sandstone
+    highlight: textmate
+
