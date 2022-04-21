@@ -31,6 +31,8 @@ includes:
   after_body: "path_to/ub_theme.html"
 ```
 
+You can find these files on the [dedicated Github page](https://github.com/lrberge/ub_theme/).
+
 --
 
 This theme is a combination of CSS and javascript (.color2[actually it's mostly javascript]).
