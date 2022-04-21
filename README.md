@@ -1,2 +1,2 @@
-# ub_theme
-The unofficial Xaringan theme of the university of Bordeaux
+# UB theme
+The unofficial Xaringan theme of the University of Bordeaux
