@@ -23,7 +23,7 @@ I finally decided to ditch Beamer for my courses (and Gosh I like Beamer) to sta
 
 Why change? I'm not proud to say that the main motivating reason was to add GIFs in my presentations.... 
 
-The transition quickly revealed to be painful however. I wanted the stuff to look in a certain way and knew I had to invest a bit of time on customization. I initially thought my journey was only about writing a few lines of CSS code. I couldn't be more wrong.
+The transition quickly revealed to be painful however. I wanted the stuff to look in a certain way and knew I had to invest a bit of time on customization. I thought my journey was only about writing a few lines of CSS code. I couldn't be more wrong.
 
 My main source of frustration was the figure heights. Most of the time my figures were too tall, kicking the text out of the scene. I ended up with a constant feeling of bullying, unable to add a new figure without fear. Looks silly, right? Don't laugh, that really drove me nuts!
 
