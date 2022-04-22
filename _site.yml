@@ -5,9 +5,10 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Tutorial"
-      href: "UB_intro/UB_intro.html"
+      href: "UB_tutorial.html"
     - text: Code
       href: "https://github.com/lrberge/ub_theme"
+output_dir: docs
 output:
   html_document:
     theme: sandstone

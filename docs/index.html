@@ -14,8 +14,8 @@
 
 <title>UB theme</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -61,6 +61,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -81,6 +82,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -233,7 +237,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -246,7 +250,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="UB_intro/UB_intro.html">Tutorial</a>
+  <a href="UB_tutorial.html">Tutorial</a>
 </li>
 <li>
   <a href="https://github.com/lrberge/ub_theme">Code</a>
@@ -270,24 +274,51 @@ $(document).ready(function () {
 </div>
 
 
-<div id="the-website-of-the-unofficial-xaringan-theme-of-the-university-of-bordeaux" class="section level1">
-<h1>The website of the unofficial Xaringan theme of the University of Bordeaux</h1>
-<p>Hi, I’m <a href="https://sites.google.com/site/laurentrberge/">Laurent Bergé</a>, and that’s the page of a Xaringan theme I created. I hope it can be useful. It’s MIT licensed so feel free to do whatever you want with it.</p>
+<div
+id="the-website-of-the-unofficial-xaringan-theme-of-the-university-of-bordeaux"
+class="section level1">
+<h1>The website of the unofficial Xaringan theme of the University of
+Bordeaux</h1>
+<p>Hi, I’m <a
+href="https://sites.google.com/site/laurentrberge/">Laurent Bergé</a>,
+and that’s the page of a Xaringan theme I created. I hope it can be
+useful. It’s MIT licensed so feel free to do whatever you want with
+it.</p>
 <div id="tutorial" class="section level3">
 <h3>Tutorial</h3>
-<p><a href="UB_intro/UB_intro.html">Here</a> is a set of slides presenting the main features of the theme.</p>
-<p>The source code of the presentation is <a href="https://github.com/lrberge/ub_theme/blob/main/UB_intro/UB_intro.Rmd">here</a>.</p>
+<p><a href="UB_tutorial.html">Here</a> is a set of slides presenting the
+main features of the theme.</p>
+<p>The source code of the presentation is <a
+href="https://github.com/lrberge/ub_theme/UB_tutorial.Rmd">here</a>.</p>
 </div>
 <div id="why-another-theme" class="section level3">
 <h3>Why another theme?</h3>
-<p>In the Fall 2021, fresh from having obtained a tenured position at the University of Bordeaux, I had to prepare new courses.</p>
-<p>I finally decided to ditch Beamer for my courses (and Gosh I like Beamer) to start working with HTML presentations, i.e. Xaringan.</p>
-<p>Why change? I’m not proud to say that the main motivating reason was to add GIFs in my presentations….</p>
-<p>The transition quickly revealed to be painful however. I wanted the stuff to look in a certain way and knew I had to invest a bit of time on customization. I initially thought my journey was only about writing a few lines of CSS code. I couldn’t be more wrong.</p>
-<p>My main source of frustration was the figure heights. Most of the time my figures were too tall, kicking the text out of the scene. I ended up with a constant feeling of bullying, unable to add a new figure without fear. Looks silly, right? Don’t laugh, that really drove me nuts!</p>
-<p>The problem is: you can’t get around the figure height problem with just CSS. So I had to roll up my sleeves and start dealing directly with the fellow having all the powers: javascript. That was a rocky trip since it was the first time I really wrote JS code. I learned a lot. And now the heights are automatically adjusted.</p>
-<p>Along the way, as I harnessed the power of javascript, I included more and more features. Although I parted with it, Beamer still lives in my heart and you may notice that some of these features only stem from Beamer nostalgia.</p>
-<p>That’s the story. A few thousand lines of code, dozens of hours… just to place a few GIFs in a presentation.</p>
+<p>In the Fall 2021, fresh from having obtained a tenured position at
+the University of Bordeaux, I had to prepare new courses.</p>
+<p>I finally decided to ditch Beamer for my courses (and Gosh I like
+Beamer) to start working with HTML presentations, i.e. Xaringan.</p>
+<p>Why change? I’m not proud to say that the main motivating reason was
+to add GIFs in my presentations….</p>
+<p>The transition quickly revealed to be painful however. I wanted the
+stuff to look in a certain way and knew I had to invest a bit of time on
+customization. I initially thought my journey was only about writing a
+few lines of CSS code. I couldn’t be more wrong.</p>
+<p>My main source of frustration was the figure heights. Most of the
+time my figures were too tall, kicking the text out of the scene. I
+ended up with a constant feeling of bullying, unable to add a new figure
+without fear. Looks silly, right? Don’t laugh, that really drove me
+nuts!</p>
+<p>The problem is: you can’t get around the figure height problem with
+just CSS. So I had to roll up my sleeves and start dealing directly with
+the fellow having all the powers: javascript. That was a rocky trip
+since it was the first time I really wrote JS code. I learned a lot. And
+now the heights are automatically adjusted.</p>
+<p>Along the way, as I harnessed the power of javascript, I included
+more and more features. Although I parted with it, Beamer still lives in
+my heart and you may notice that some of these features only stem from
+Beamer nostalgia.</p>
+<p>That’s the story. A few thousand lines of code, dozens of hours… just
+to place a few GIFs in a presentation.</p>
 </div>
 </div>
 

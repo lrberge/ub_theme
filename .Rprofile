@@ -7,9 +7,11 @@ build_md_site = function(){
 	
 	Sys.sleep(0.5)
 	
-	file.copy(list.files("_site/", full.names = TRUE), 
-			  "docs/", 
-			  recursive = TRUE)
+	file.remove("docs/")
+	
+	Sys.sleep(0.5)
+	
+	file.rename("_site/", "docs/")
 	
 }
 

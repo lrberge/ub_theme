@@ -6,9 +6,9 @@ date: "`r Sys.Date()`"
 institute: "University of Bordeaux, B<sub>x</sub>SE"
 output:
   xaringan::moon_reader:
-    css: "../ub_theme.css"
+    css: "ub_theme.css"
     includes:
-      after_body: "../ub_theme.html"
+      after_body: "ub_theme.html"
     nature:
       highlightStyle: magula
       highlightLines: true
