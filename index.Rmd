@@ -15,13 +15,24 @@ body {
 
 Hi, I'm [Laurent Bergé](https://sites.google.com/site/laurentrberge/), and that's the page of a Xaringan theme I created. I hope it can be useful. It's MIT licensed so feel free to do whatever you want with it.
 
+### How to?
+
+Just add the following three lines in your YAML header and you're good to go.
+```{}
+css: "path_to/ub_theme.css"
+includes:
+  after_body: "path_to/ub_theme.html"
+```
+
+The files can be found in the [Github repo](https://github.com/lrberge/ub_theme).
+
 ### Tutorial
 
 [Here](UB_tutorial.html) is a set of slides presenting the main features of the theme. 
 
-The source code of the presentation is [here](https://github.com/lrberge/ub_theme/blob/main/UB_tutorial.Rmd).
+The source code of the presentation is [here](https://github.com/lrberge/ub_theme/blob/main/UB_tutorial/UB_tutorial.Rmd).
 
-### Why another theme?
+### Why?
 
 In the Fall 2021, fresh from having obtained a tenured position at the University of Bordeaux, I had to prepare new courses. 
 
