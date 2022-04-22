@@ -5,6 +5,12 @@ date: "21-04-2022"
 output: html_document
 ---
 
+<style type="text/css">
+body {
+  font-size: 13pt;
+}
+</style>
+
 # The website of the unofficial Xaringan theme of the University of Bordeaux
 
 Hi, I'm [Laurent Bergé](https://sites.google.com/site/laurentrberge/), and that's the page of a Xaringan theme I created. I hope it can be useful. It's MIT licensed so feel free to do whatever you want with it.
