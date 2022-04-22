@@ -19,7 +19,7 @@ Hi, I'm [Laurent Bergé](https://sites.google.com/site/laurentrberge/), and that
 
 [Here](UB_tutorial.html) is a set of slides presenting the main features of the theme. 
 
-The source code of the presentation is [here](https://github.com/lrberge/ub_theme/UB_tutorial.Rmd).
+The source code of the presentation is [here](https://github.com/lrberge/ub_theme/blob/main/UB_tutorial.Rmd).
 
 ### Why another theme?
 
