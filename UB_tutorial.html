@@ -165,17 +165,64 @@ Example with `.leftcol-25[text]`.footnote[{altstar}The unit is the percentage.]
 
 ---
 
-# Multi-columns
+# 3+ columns
 
 You can add more than two columns with the `.column-size` environment.
 
-.column-15[Small column.]
+.column-20.bg-color-linen.ta-center[Small column &lt;br&gt; `.column-20`]
 
-.column-65[Large column.]
+.column-60.bg-color-lavender.ta-center[Large column &lt;br&gt; `.column-60`]
 
-.column-15[Small column.]
+.column-20.bg-color-linen.ta-center[Small column &lt;br&gt; `.column-20`]
 
-You can add as many as you want but, well usually more than 3 isn't really advised.
+--
+
+As you can notice, in this environment the total width is extended. The reason is that when I use multiple columns, I usually want enough space for each column, which requires extra space on each side. 
+
+You can easily change that behavior with the `margin` property of the `.column-container` class in the CSS file.
+
+---
+
+# Panels
+
+.panelset[
+
+.pane[{Creation}
+
+To create a panel, use:
+```{}
+.panelset[
+
+.pane[{Creation}
+
+To create a panel, use...
+
+]
+
+]
+```
+
+]
+
+.pane[{Details}
+
+You create a pane with the syntax `.pane[{title} content]`. 
+
+Note that the title must be present.
+
+]
+
+.pane[{Limitations}
+
+These panels do the job but are limited in terms of customization.
+
+For much more detailed panels, please have a look at [Garrick Aden-Buie](https://www.garrickadenbuie.com/)'s [xaringanExtra's panelset](https://pkg.garrickadenbuie.com/xaringanExtra/#/panelset).
+
+]
+
+
+]
+
 
 ---
 
