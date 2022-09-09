@@ -9,6 +9,7 @@ output:
     css: "ub_theme.css"
     includes:
       after_body: "ub_theme.html"
+    self_contained: true
     nature:
       highlightStyle: magula
       highlightLines: true
