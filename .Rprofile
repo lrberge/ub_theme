@@ -1,7 +1,7 @@
 #----------------------------------------------#
 # Author: Laurent Berge
 # Date creation: Fri Sep  9 09:24:06 2022
-# ~: auto copy style files
+# ~: auto copy style files + auto render
 #----------------------------------------------#
 
 
@@ -26,6 +26,7 @@ if(m_time_tuto_html < m_time_html){
 }
 
 if(any_update){
+	message("rendering UB_tutorial")
 	rmarkdown::render("UB_tutorial/UB_tutorial.Rmd")
 }
 
