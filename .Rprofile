@@ -27,6 +27,7 @@ if(m_time_tuto_html < m_time_html){
 
 if(any_update){
 	message("rendering UB_tutorial")
+	suppressPackageStartupMessages(library(rmarkdown))
 	rmarkdown::render("UB_tutorial/UB_tutorial.Rmd")
 }
 
