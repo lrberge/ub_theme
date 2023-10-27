@@ -63,7 +63,7 @@ That's the story. A few thousand lines of code, dozens of hours... just to place
 
 2023-10-27
 - fix rendering of the tutorial
-- add limitation
+- add limitation: theme not working with recent remark versions
 
 
 
