@@ -514,6 +514,11 @@ img, video, iframe {
     top: 0 !important;
     left: 0 !important;
   }
+  
+  /* Honestly I don't know why I have to do what follows, but it works. */
+  .remark-slide-content {
+  	padding-right: 6em !important;
+  }
 }
 
 

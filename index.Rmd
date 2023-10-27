@@ -1,7 +1,7 @@
 ---
 title: "UB theme"
 author: "Laurent Bergé"
-date: "21-04-2022"
+date: "2023-10-27"
 output: html_document
 ---
 
@@ -24,11 +24,20 @@ includes:
   after_body: "path_to/ub_theme.html"
 ```
 
+**Update 2023:** The theme does not work with recent versions of `remark.js`. I am not planning to fix it. Now you need four lines of code (to use an old remark version):
+```{}
+xaringan::moon_reader:
+  chakra: libs/remark-latest.min.js
+  css: "path_to/ub_theme.css"
+  includes:
+    after_body: "path_to/ub_theme.html"
+```
+
 The files can be found in the [Github repo](https://github.com/lrberge/ub_theme).
 
 ### Tutorial
 
-[Here](UB_tutorial.html) is a set of slides presenting the main features of the theme. 
+[Here](UB_tutorial/UB_tutorial.html) is a set of slides presenting the main features of the theme. 
 
 The source code of the presentation is [here](https://github.com/lrberge/ub_theme/blob/main/UB_tutorial/UB_tutorial.Rmd).
 
@@ -49,6 +58,12 @@ The problem is: you can't get around the figure height problem with just CSS. So
 Along the way, as I harnessed the power of javascript, I included more and more features. Although I parted with it, Beamer still lives in my heart and you may notice that some of these features only stem from Beamer nostalgia. 
 
 That's the story. A few thousand lines of code, dozens of hours... just to place a few GIFs in a presentation.
+
+### Changelog
+
+2023-10-27
+- fix rendering of the tutorial
+- add limitation
 
 
 
